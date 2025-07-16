@@ -18,7 +18,7 @@ const cdRack = [
         title: "The Miseducation of Lauryn Hill",
         artist: "Lauryn Hill",
         year: 1998,
-        ImgSource: "https://upload.wikimedia.org/wikipedia/en/3/35/The_Miseducation_of_Lauryn_Hill.jpg",
+        ImgSource: "https://m.media-amazon.com/images/I/71YmBlTMamL.__AC_SX300_SY300_QL70_ML2_.jpg",
         imgAlt: "album cover of The Miseducation of Lauryn Hill by Lauryn Hill",    
     },
     { 
@@ -39,14 +39,14 @@ const cdRack = [
         title: "Aijuswanaseing",
         artist: "Musiq Soulchild",
         year: 2000,
-        ImgSource: "https://upload.wikimedia.org/wikipedia/en/0/0c/Aijuswanaseing.jpg",
+        ImgSource: "https://m.media-amazon.com/images/I/A1FJoA9IHML._UF894,1000_QL80_.jpg",
         imgAlt: "album cover of Aijuswanaseing by Musiq Soulchild",
     },
     {
         title: "Voodoo",
         artist: "D'Angelo",
         year: 2000,
-        ImgSource: "https://upload.wikimedia.org/wikipedia/en/3/3c/D%27Angelo_-_Voodoo.jpg",
+        ImgSource: "https://m.media-amazon.com/images/I/61RzhAC0LSL._UF1000,1000_QL80_.jpg",
         imgAlt: "album cover of Voodoo by D'Angelo",
     },
     {
@@ -66,6 +66,10 @@ cdRack.forEach(cd => {
     const cdImg = document.createElement("img");
     cdImg.src = cd.ImgSource;
     cdImg.alt = cd.imgAlt;
+    cdImg.width = 200;
+    cdImg.addEventListener("click", function () {
+        console.log(`Clicked on ${cd.title} by ${cd.artist}`);
+    });
 
     const cdTitle = document.createElement("h2");
     cdTitle.textContent = `${cd.title} (${cd.year})`;
@@ -79,3 +83,7 @@ cdRack.forEach(cd => {
 
     cdRackSection.appendChild(cdDiv);
 });
+
+const NewcdImg = document.createElement("selection");
+NewcdImg.src = cdRackSection[0].cd.ImgSource;
+NewcdImg.alt = cdRackSection[0].cd.imgAlt;

@@ -1,3 +1,20 @@
 body {
     background-color: blue;
 } 
+
+#cd-rack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow: scroll;
+
+
+}
+#current-book img {
+  width: 100%;
+}
+
+.individual-book img:hover {
+  cursor: pointer;
+}
