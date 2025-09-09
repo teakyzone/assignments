@@ -1,9 +1,9 @@
 body {
   background-color: #b6ad9a;
   font-family: Arial, Helvetica, sans-serif;
-
 }
-@media screen and (min-width: 1444px) {  body {
+@media screen and (min-width: 1444px) {
+  body {
     background-color: rgb(222, 214, 203);
   }
 }
@@ -11,25 +11,36 @@ body {
 .navbar {
   background-color: #c2ae80;
   font-size: medium;
-  padding: 20px;
+  padding: 0px;
   display: grid;
   justify-content: flex-end;
-  justify-content: space-between
- 
+  justify-content: space-between;
 }
 
+.nav-links a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.logo {
+  max-width: 100%;
+}
 img {
   max-width: 100%;
   height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .cta {
   background-color: #c2ae80;
   padding: 20px;
-    text-align: center;
-    
-
+  text-align: center;
 }
-.cta-button {
+.cta-button,
+.SubmitJoin {
   display: inline-block;
   background-color: #76624d;
   color: rgb(255, 255, 255);
@@ -45,7 +56,6 @@ img {
   margin-bottom: 100px;
 }
 
-
 .nav-links {
   display: block;
   color: white;
@@ -54,7 +64,7 @@ img {
   text-decoration: none;
   display: flex;
   justify-self: end;
-}   
+}
 
 .search-bar {
   display: flex;
@@ -65,11 +75,10 @@ img {
   text-align: center;
 }
 
-
 .signup-form {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   color: #ffffff;
 }
 .footer {
@@ -83,24 +92,23 @@ img {
 
 .about {
   background-color: #c2ae80;
-  
-  font-size: medium;
-color: #ffffff;
-  padding: 20px;
-text-align: center;
-    background: rgba(194, 174, 128)
 
+  font-size: medium;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  background: rgba(194, 174, 128);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 20px;
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .community-text {
-    color: #ffffff;
+  color: #ffffff;
   font-size: medium;
   text-align: center;
   margin-top: 100px;
